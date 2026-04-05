@@ -1,10 +1,15 @@
 import app from "./src/app.js";
 import dotenv from "dotenv";
+import connectDatabase from './src/configs/connectDatabase.js'
 
 const port = process.env.PORT || 3000;
 dotenv.config();
 
+// - Database code here
+await connectDatabase()
+
 // - Server code here
+
 
 // - Launching code here
 app.listen(port, () =>
