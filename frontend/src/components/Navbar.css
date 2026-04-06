@@ -10,7 +10,7 @@ nav {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: black;
+    background-color: linear-gradient(black , gray,20deg);
     border-radius: 1rem;
 
 }
@@ -32,8 +32,10 @@ nav .navpart ul {
 }
 
 nav .navpart ul a {
-    padding: .25rem .5rem;
+    padding: .25rem;
     margin: auto 16px;
+    color:white;
+    text-decoration: none;
 }
 
 nav .navpart .btn {
@@ -42,8 +44,9 @@ nav .navpart .btn {
     border-radius: .75rem;
     margin: auto .5rem;
     cursor: pointer;
+    font-weight: bold;
 }
 
 nav .navpart .btn:hover {
-    background-color: rgb(66, 65, 65);
+    background-color: rgb(41, 39, 39);
 }
