@@ -1,11 +1,11 @@
-@import "tailwindcss";
-
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* box-sizing: border-box; */
+  /* margin: 0; */
+  /* padding: 0; */
   font-family: candara;
 }
+
+@import "tailwindcss";
 
 :root {
   --shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
@@ -13,6 +13,11 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+@theme theme{
+  --color-theme:#242c2f;
+  /* color:#242c2f; */
 }
 
 body {

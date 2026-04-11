@@ -1,0 +1,17 @@
+{
+  "name": "lens-and-logic",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "front" : "concurrently -c \"blue\" \"cd frontend && npm run dev\"",
+    "back" : "concurrently -c \"green,yellow\" \"mongod\" \"cd backend && npm run dev\"",
+    "both": "concurrently -c \"green,yellow,blue\" \"mongod\" \"cd backend && npm run dev\" \"cd frontend && npm run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

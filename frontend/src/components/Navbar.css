@@ -1,17 +1,21 @@
-* {
-    /* border:1px solid green; */
+body{
+    position:relative;
+    padding:100px 50px;
+    /* width:100vw;
+    height:100vh; */
 }
 
 nav {
-    width: calc(100vw - 20px);
-    height: 2.5rem;
+    width: calc(100vw - 40px);
+    box-shadow: 12px 12px 10px 2px rgba(202, 172, 172, 0.2);
+    /* height: 2.5rem; */
     display: flex;
-    border: 1px solid white;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: linear-gradient(black , gray,20deg);
-    border-radius: 1rem;
+    border: 1px solid rgb(8, 7, 7);
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(29, 28, 37);
+    border-radius: 3rem;
 
 }
 
@@ -20,6 +24,7 @@ nav .navpart {
     width: 33.33%;
     justify-content: center;
     align-items: center;
+    margin:5px 0;
 }
 
 nav .navpart span {
@@ -41,10 +46,17 @@ nav .navpart ul a {
 nav .navpart .btn {
     width: 6rem;
     height: 2rem;
-    border-radius: .75rem;
-    margin: auto .5rem;
+    border:1px solid white;
+    border-radius: 10vw;
     cursor: pointer;
     font-weight: bold;
+}
+
+nav .navpart:nth-child(3){
+    display:flex;
+    justify-items: flex-end;
+    /* border:1px solid blue; */
+    gap:.5rem;
 }
 
 nav .navpart .btn:hover {

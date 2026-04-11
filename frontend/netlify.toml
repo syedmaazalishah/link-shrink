@@ -1,0 +1,12 @@
+# This section ensures React Router handles all page navigation
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# OPTIONAL: If you have a backend API on a different server 
+# and want to avoid CORS issues, you can proxy it like this:
+# [[redirects]]
+#   from = "/api/*"
+#   to = "https://your-backend-api.com/:splat"
+#   status = 200
